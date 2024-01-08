@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: white;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #323639;
+}
+
+body {
+  margin: 0;
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: #ffb736;
+  color: #323639;
+  z-index: -1;
+  font-family: "Poppins", sans-serif;
+}
+
+#main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  width: 300px;
+  margin: 40px;
+}
+
+#file_input_1,
+#file_input_2 {
+  visibility: hidden;
+}
+
+#pdf_preview_1,
+#pdf_preview_2 {
+  width: 100%;
+  height: 350px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.input_container {
+  display: flex;
+  align-items: center;
+}
+
+.custom_input {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.custom_input:hover {
+  background-color: #eee;
+}
+
+.pdf_icon {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+
+#submit_btn {
+  width: 170px;
+  height: 55px;
+  background-color: #fede65;
+  border: 3px solid black;
+  border-radius: 6px;
+  outline: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 0 80px;
+  position: relative;
+}
+
+#submit_btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  border-radius: 6px;
+  z-index: -1;
+  background-color: black;
+}
+
+#result_preview_1,
+#result_preview_2 {
+  display: none;
+  background-color: #323639;
+  color: white;
+  width: 350px;
+  height: 380px;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 10px;
+  overflow-y: scroll;
+}
+
+.highlight {
+  background: #fede65;
+  color: #323639;
+  border-radius: 4px;
+  padding: 0 2px;
+  font-weight: 600;
+}
+
+#equal {
+  display: none;
+  text-align: center;
+  margin: 0 100px;
+  font-size: 200px;
+  font-weight: bold;
+  color: #01b636;
+  position: relative;
+}
+
+#equal::after {
+  content: "=";
+  font-size: 200px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: -1;
+}
+
+#not_equal {
+  display: none;
+  text-align: center;
+  margin: 0 80px;
+  font-size: 200px;
+  font-weight: bold;
+  color: #ff0000;
+  position: relative;
+}
+
+#not_equal::after {
+  content: "!=";
+  font-size: 200px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  z-index: -1;
+}

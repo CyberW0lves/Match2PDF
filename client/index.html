@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Match PDF</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <main id="main">
+      <input type="file" id="file_input_1" />
+      <input type="file" id="file_input_2" />
+      <div class="input_container">
+        <div class="custom_input">
+          <iframe id="pdf_preview_1" frameborder="0" scrolling="auto"></iframe>
+          <img src="icons/pdf_icon.png" alt="pdf_icon" class="pdf_icon" />
+        </div>
+        <div id="result_preview_1"></div>
+        <button id="submit_btn">Find Match</button>
+        <p id="equal">=</p>
+        <p id="not_equal">!=</p>
+        <div class="custom_input">
+          <iframe id="pdf_preview_2" frameborder="0" scrolling="auto"></iframe>
+          <img src="icons/pdf_icon.png" alt="pdf_icon" class="pdf_icon" />
+        </div>
+        <div id="result_preview_2"></div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
